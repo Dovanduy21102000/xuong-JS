@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="./dist/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
+
 <body>
     <!--Header-->
     <header>
@@ -19,14 +20,16 @@
             <ul class="flex gap-x-8 font-medium text-xl">
                 <li class="hover:text-amber-500"><a href="./index.html">Home</a></li>
                 <li class="hover:text-amber-500"><a href="./shop.html">Shop</a></li>
-                <li class="hover:text-amber-500"><a href="#">About</a></li>
-                <li class="hover:text-amber-500"><a href="#">Contact</a></li>
+                <li class="hover:text-amber-500"><a href="./about.html">About</a></li>
+                <li class="hover:text-amber-500"><a href="./contact.html">Contact</a></li>
             </ul>
             <div class="flex gap-x-4">
                 <span class="material-symbols-outlined">person</span>
-                <span class="material-symbols-outlined">search</span>
+                <a href="./product-detail.html" class="hover:text-yellow-500"><span
+                        class="material-symbols-outlined">search</span></a>
                 <span class="material-symbols-outlined">favorite</span>
-                <span class="material-symbols-outlined">shopping_cart</span>
+                <a href="./payment.html" class="hover:text-yellow-500"><span
+                        class="material-symbols-outlined">shopping_cart</span></a>
             </div>
         </section>
         <!--End Nav Bar-->
@@ -38,6 +41,73 @@
     </header>
     <!--Main-->
     <main>
+        <section class="container max-w-screen-xl grid grid-cols-3 m-auto mt-[72px]">
+            <div class="col-span-1 flex ">
+                <div class="mr-6">
+                    <img src="./assets/images/location_on_FILL0_wght400_GRAD0_opsz24 (2) 1.png" alt=""
+                        class="border-2 border-solid border-[#CA8A04] p-3" width="84px">
+                </div>
+                <div class="mt-4">
+                    <p class="text-[24px] font-bold mb-5">ADDRESS</p>
+                    <p class="text-[18px] text-[#71717A] w-[75%]">60/850 Đường Láng, Láng Thượng, Đống Đa, Hà Nội</p>
+                </div>
+
+            </div>
+            <div class="col-span- flex">
+                <div class="mr-6">
+                    <img src="./assets/images/contacts_FILL0_wght400_GRAD0_opsz24 1.jpg" alt=""
+                        class="border-2 border-solid border-[#CA8A04] p-3">
+                </div>
+                <div class="mt-4">
+                    <p class="text-[24px] font-bold mb-5">CONTACT DETAILS</p>
+                    <p class="text-[18px] text-[#71717A] w-[75%]">info@furniro.com</p>
+                    <p class="text-[24px] text-[#71717A] font-semibold">02056278686</p>
+                </div>
+            </div>
+            <div class="col-span- flex">
+                <div class="mr-6">
+                    <img src="./assets/images/share_FILL0_wght400_GRAD0_opsz24 1.png" alt=""
+                        class="border-2 border-solid border-[#CA8A04] p-3">
+                </div>
+                <div class="mt-4">
+                    <p class="text-[24px] font-bold mb-5">SOCIAL NETWORKS</p>
+                    <div class="flex *:mr-5">
+                        <img src="./assets/images/facebook-square.png" alt="">
+                        <img src="./assets/images/instagram.png" alt="">
+                        <img src="./assets/images/image 40 (1).png" alt="">
+                        <img src="./assets/images/Vector.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="grid grid-cols-2 bg-[#F1F1F1] mt-16">
+            <img src="./assets/images/contact1.png" alt="" class="w-full ">
+            <div class="pt-[72px] pr-[80px] pl-8">
+                <p class="text-[20px] font-medium mb-4">Contact</p>
+                <h2 class="text-[40px] font-bold mb-8">CONNECT WITH US NOW</h2>
+                <form action="" class="">
+                    <div class="grid grid-cols-2 gap-8 mb-6">
+                        <input type="text" name="msg" placeholder="First Name"
+                            class="border-b border-solid border-neutral-400 bg-[#F1F1F1] w-full">
+                        <input type="text" name="msg" placeholder="Last Name"
+                            class="border-b border-solid border-neutral-400 bg-[#F1F1F1] w-full">
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 mb-6">
+                        <input type="text" name="msg" placeholder="Email"
+                            class="border-b border-solid border-neutral-400 bg-[#F1F1F1] w-full">
+                        <input type="text" name="msg" placeholder="Phone Number"
+                            class="border-b border-solid border-neutral-400 bg-[#F1F1F1] w-full">
+                    </div>
+                    <input type="text" name="msg" placeholder="Message"
+                        class="border-b border-solid border-neutral-400 bg-[#F1F1F1] w-full">
+                    <a class="mt-8 px-[24px] py-3 bg-[#CA8A04] text-white w-[200px] font-bold flex" href="#">
+                        <div class="-rotate-45"><span class="material-symbols-outlined">send</span></div>
+                        Send Infomation
+                    </a>
+                </form>
+            </div>
+        </section>
     </main>
     <!--End Main-->
     <!--Footer-->
@@ -80,4 +150,5 @@
     </footer>
     <!--End Footer-->
 </body>
+
 </html>
